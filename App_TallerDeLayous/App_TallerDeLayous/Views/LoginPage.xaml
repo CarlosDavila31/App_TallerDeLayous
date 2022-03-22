@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.LoginPage"
+             BackgroundImageSource="https://img.wallpaper.sc/iphone4s/images/iphone4s-740x1196-wallpaper_01292.jpg"
+             Title="LoginPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="5">
+            <Image  HeightRequest="150" WidthRequest="150" Grid.Row="0" Margin="0,30,0,0" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/658px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png" />
+        </StackLayout>
+
+        <Label Text="Welcome to APPDESING" FontSize="Large" TextColor="#1A237E"  HorizontalOptions="Center" Margin="0,0,0,30"/>
+
+        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="user.png" HeightRequest="40" WidthRequest="45"/>
+                <Entry x:Name="txtUser" Placeholder="User"  PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="password.png" HeightRequest="35" WidthRequest="35" />
+                <Entry x:Name="txtpaswod" Placeholder="Password" IsPassword="True"  PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+
+            </StackLayout>
+        </Frame>
+        <Button x:Name="Login" Text="Iniciar Sesión" Margin="10" BackgroundColor="#1A237E" FontAttributes="Bold" CornerRadius="100" TextColor="White" Clicked="Login_Clicked" />
+
+        <Label FontSize="16" Padding="30,30,30,40" >
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span FontSize="16" Text="¿Crear Una Cuenta?  " TextColor="#1A237E"/>
+                        <Span FontSize="16" Text="Registrate" FontAttributes="Bold" TextColor="#1A237E" TextDecorations="Underline"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <StackLayout  Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
+            <Image  HeightRequest="40" WidthRequest="40"  Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png" />
+            <Image  HeightRequest="40" WidthRequest="40"  Source=" https://www.pngplay.com/wp-content/uploads/8/Twitter-PNG-Clipart-Background.png" />
+            <Image  HeightRequest="40" WidthRequest="40"  Source=" https://www.shareicon.net/data/512x512/2015/08/26/91245_plus_512x512.png" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

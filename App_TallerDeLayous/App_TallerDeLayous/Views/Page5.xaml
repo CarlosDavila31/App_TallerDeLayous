@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.Page5"
+             Title="ACCOUNT SETTINGS  "
+             BackgroundImageSource="https://w0.peakpx.com/wallpaper/622/840/HD-wallpaper-gradient-purple-blue-blank-peace.jpg">
+
+    
+
+    <StackLayout>
+        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center">
+
+            <Label Text=" Music y Round" Padding="20,20"  TextColor="White" FontSize="Medium" FontAttributes="Bold"  />
+
+        </FlexLayout>
+
+        <StackLayout Padding="20,20,20,0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+
+
+                <Label Text="Sound Efects" Grid.Column="1"  Margin="-80,-0" TextColor="White"/>
+
+
+                <Switch OnColor="Green" ThumbColor="Orange" Grid.Column="3" Grid.Row="0" Margin="-20,-0"/>
+
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,0,20,10">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " Grid.Column="0" Grid.Row="0" TextColor="White" />
+
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,0,20,0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Sound Efects" Grid.Column="1"  Margin="-80,-0" TextColor="White" />
+
+                <Switch OnColor="Green" ThumbColor="Orange" Grid.Column="3" Grid.Row="0" Margin="-20,-0"/>
+
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,0,20,30">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " Grid.Column="0" Grid.Row="0"  TextColor="White"/>
+            </Grid>
+
+        </StackLayout >
+
+
+        <StackLayout Padding="20,0,20,0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Loudness" Grid.Column="1"  Margin="-110,-0" TextColor="White"/>
+
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,0,20,30">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Slider  MinimumTrackColor="#EF6C00"  ThumbColor="#EF6C00" MaximumTrackColor="#EF6C00" Grid.Column="0" Grid.Row="0" />
+
+            </Grid>
+
+        </StackLayout >
+
+        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+            <RelativeLayout Padding="0,0,0,30">
+                <BoxView Color="Silver"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="10"
+                 RelativeLayout.WidthConstraint="140"
+                 RelativeLayout.HeightConstraint="5" />
+
+            </RelativeLayout>
+
+            <Label Text="Public preferences"   TextColor="White" FontSize="Medium" FontAttributes="Bold"  />
+
+        </FlexLayout>
+
+        <StackLayout Padding="20,30,20,0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Visibility" Grid.Column="1"  Margin="-110,-0" TextColor="White" />
+
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,0,20,30">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " Grid.Column="0" Grid.Row="0"  TextColor="White"/>
+            </Grid>
+
+        </StackLayout >
+
+        <StackLayout Padding="20,30,20,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+
+                <RadioButton  Content="Lorem Ipsum1" Grid.Column="0"  Grid.Row="0"   FontSize="Small"   TextColor="White" />
+                <RadioButton  Content="Lorem Ipsum2" Grid.Column="0"    Grid.Row="1"  FontSize="Small"  TextColor="White" />
+
+                <RadioButton  Content="Lorem Ipsum3" Grid.Column="1"  Grid.Row="0"   FontSize="Small"   TextColor="White" />
+                <RadioButton  Content="Lorem Ipsum4" Grid.Column="1"    Grid.Row="1"   FontSize="Small" TextColor="White" />
+
+                <RadioButton  Content="Lorem Ipsum5" Grid.Column="2"  Grid.Row="0"    FontSize="Small"  TextColor="White" />
+                <RadioButton  Content="Lorem Ipsum6" Grid.Column="2"    Grid.Row="1"  FontSize="Small"  TextColor="White" />
+
+            </Grid>
+
+        </StackLayout >
+
+    </StackLayout>
+
+</ContentPage>

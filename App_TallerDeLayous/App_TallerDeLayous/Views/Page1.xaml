@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.Page1"
+             Title="Write Post" 
+             BackgroundImageSource="https://img.wallpaper.sc/iphone4s/images/iphone4s-740x1196-wallpaper_01292.jpg">
+            
+   <FlexLayout Direction="Column" >
+        <FlexLayout FlexLayout.Grow="1">
+            <ScrollView >
+                <StackLayout  >
+                    <StackLayout >
+
+                        <Frame BackgroundColor="White" WidthRequest="100" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Image Source="camara.png"  WidthRequest="50"  VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Text="add main" TextColor="Gray" HorizontalOptions="Center"/>
+                                <Label Text="photo" TextColor="Gray" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >                            
+                            <Image Source="lapiz.png" HeightRequest="30"/>
+                            <Label Text="Post Headline"
+                                    FontAttributes="Bold"
+                                   HorizontalOptions="Center"
+                                   TextColor="White"
+                                   Padding="2" FontSize="20" 
+                                   Margin="0,7,7,7"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                        <RelativeLayout Padding="0,0,0,30">
+                            <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                        </RelativeLayout>
+
+                    </FlexLayout>
+
+                    <StackLayout Margin="18"  >
+                        <Label  TextColor="Black" 
+                                FontSize="16.5" 
+                                Text="Xamarin.Forms usa la plataforma Xamarin para ejecutar aplicaciones de .NET de forma nativa en todas las plataformas. Para obtener más información sobre la plataforma Xamarin, vea ¿Qué es Xamarin?."/>
+                       
+                       <Label  TextColor="Black" 
+                               FontSize="16.5" 
+                               Text="Xamarin.Forms usa la plataforma Xamarin para ejecutar aplicaciones de .NET de forma nativa en todas las plataformas. Para obtener más información sobre la plataforma Xamarin, vea ¿Qué es Xamarin?."/>
+
+                        <Grid>
+                            <StackLayout Grid.Column="0" Grid.Row="0" Margin="5" HeightRequest="200">
+                                <Image Source="Captura" HeightRequest="190"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="0"  Margin="5" HeightRequest="200">
+                                <Label TextColor="Black" FontSize="16.5" 
+                                       Text="Xamarin.Forms usa la plataforma Xamarin para ejecutar aplicaciones de .NET de forma nativa en todas las plataformas. Para obtener más información sobre la plataforma Xamarin, vea ¿Qué es Xamarin?."/>
+                            </StackLayout>
+                        </Grid>
+                        <Label  TextColor="Black" 
+                               FontSize="16.5" 
+                               Text="Xamarin.Forms usa la plataforma Xamarin para ejecutar aplicaciones de .NET de forma nativa en todas las plataformas. Para obtener más información sobre la plataforma Xamarin, vea ¿Qué es Xamarin?."/>
+
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </FlexLayout>
+
+        <Grid>
+
+            <StackLayout Orientation="Horizontal"  VerticalOptions="Center" HorizontalOptions="Center" >
+
+                <Frame  Grid.Column="0" Grid.Row="0" Padding="0"  BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="A.png"  
+                                 BorderColor="White"
+                                  BackgroundColor="Transparent"
+                                 BorderWidth="2.5"  
+                                 Padding="0" 
+                                 HeightRequest="50" 
+                                 CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="0"  BackgroundColor="White" CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+
+                <Frame  Grid.Column="2" Grid.Row="0" Padding="0" BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="camaraa.png" 
+                                  BackgroundColor="Transparent"
+                                 BorderColor="White" 
+                                 BorderWidth="2.5"  Padding="0" 
+                                 HeightRequest="50" CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="3" Grid.Row="0"  BackgroundColor="White"  CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="4" Grid.Row="0" Padding="0" BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="Clip.png"  BorderColor="White" 
+                                 BorderWidth="2.5"  Padding="0"
+                                  BackgroundColor="Transparent"
+                                 HeightRequest="50" CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="5" Grid.Row="0"  BackgroundColor="White"  CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="6" Grid.Row="0" Padding="0" BackgroundColor="Transparent"  WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="microfono.png" 
+                                 BorderColor="White" BorderWidth="2.5" 
+                                  BackgroundColor="Transparent"
+                                 Padding="0" HeightRequest="50" 
+                                 CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="7" Grid.Row="0"  BackgroundColor="White"  CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="8" Grid.Row="0" Padding="0" BackgroundColor="Transparent"  WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="configuracion.png"  
+                                 BorderColor="White" BorderWidth="2.5"  
+                                 Padding="0" HeightRequest="50"
+                                  BackgroundColor="Transparent"
+                                 CornerRadius="100"/>
+                </Frame>
+                
+            </StackLayout>
+        </Grid>
+    </FlexLayout>
+    
+</ContentPage>

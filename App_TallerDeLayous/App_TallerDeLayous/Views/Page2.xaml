@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.Page2"
+             Title="AbsoluteLayout"
+             BackgroundImageSource="https://img.wallpaper.sc/iphone4s/images/iphone4s-740x1196-wallpaper_01292.jpg">
+    <FlexLayout Direction="Column" >
+        <FlexLayout FlexLayout.Grow="1">
+            <ScrollView >
+                <StackLayout>
+                    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center"  Padding="5">
+                        <Label  TextColor="White" Text="_______________________________________________________________" HorizontalOptions="Center" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Start" Padding="8">
+                                <Image Source="usuario.png"  HeightRequest="40"/>
+                                <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" Text="John Doe" TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="0"  Orientation="Horizontal" HorizontalOptions="End" >
+                                <Label  Text="Today, 12 AM" TextColor="White"  FontSize="17"  VerticalOptions="Center"/>
+                                <Image Source="estado.png" HeightRequest="40" BackgroundColor="Transparent"/>
+                            </StackLayout>                            
+                        </Grid>
+                        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                            <RelativeLayout Padding="0,0,0,30">
+                                <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                            </RelativeLayout>
+
+                        </FlexLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,10,0,10" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label Text="Honda es un fabricante japonés de motocicletas, automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, robots y componentes para la industria automotriz."
+                           FontSize="17"
+                           TextColor="Black"/>
+
+                        <Label  Padding="10" TextColor="White" Text="___________________________________________________________" HorizontalOptions="Center" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" >
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Image Source="corazon.png" HeightRequest="35"/>
+                                <Label Text="123"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Label Text=" "/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                                <Image Source="mensaje.png" HeightRequest="22"/>
+                                <Label Text="54"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+
+                            <Image Source="direcion.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center"  Padding="5">
+                        <Label  TextColor="White" Text="_______________________________________________________________" HorizontalOptions="Center" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Start" Padding="8">
+                                <Image Source="usuario.png"  HeightRequest="40"/>
+                                <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" Text="John Doe" TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="0"  Orientation="Horizontal" HorizontalOptions="End" >
+                                <Label  Text="Today, 12 AM" TextColor="White"  FontSize="17"  VerticalOptions="Center"/>
+                                <Image Source="estado.png" HeightRequest="40" BackgroundColor="Transparent"/>
+                            </StackLayout>
+                        </Grid>
+                        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                            <RelativeLayout Padding="0,0,0,30">
+                                <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                            </RelativeLayout>
+
+                        </FlexLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,10,0,10" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label Text="Honda es un fabricante japonés de motocicletas, automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, robots y componentes para la industria automotriz."
+                           FontSize="17"
+                           TextColor="Black"/>
+
+                        <Label  Padding="10" TextColor="White" Text="___________________________________________________________" HorizontalOptions="Center" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" >
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Image Source="corazon.png" HeightRequest="35"/>
+                                <Label Text="123"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Label Text=" "/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                                <Image Source="mensaje.png" HeightRequest="22"/>
+                                <Label Text="54"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+
+                            <Image Source="direcion.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center"  Padding="5">
+                        <Label  TextColor="White" Text="_______________________________________________________________" HorizontalOptions="Center" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Start" Padding="8">
+                                <Image Source="usuario.png"  HeightRequest="40"/>
+                                <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" Text="John Doe" TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="0"  Orientation="Horizontal" HorizontalOptions="End" >
+                                <Label  Text="Today, 12 AM" TextColor="White"  FontSize="17"  VerticalOptions="Center"/>
+                                <Image Source="estado.png" HeightRequest="40" BackgroundColor="Transparent"/>
+                            </StackLayout>
+                        </Grid>
+                        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                            <RelativeLayout Padding="0,0,0,30">
+                                <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                            </RelativeLayout>
+
+                        </FlexLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,10,0,10" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label Text="Honda es un fabricante japonés de motocicletas, automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, robots y componentes para la industria automotriz."
+                           FontSize="17"
+                           TextColor="Black"/>
+
+                        <Label  Padding="10" TextColor="White" Text="___________________________________________________________" HorizontalOptions="Center" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" >
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Image Source="corazon.png" HeightRequest="35"/>
+                                <Label Text="123"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Label Text=" "/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                                <Image Source="mensaje.png" HeightRequest="22"/>
+                                <Label Text="54"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+
+                            <Image Source="direcion.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center"  Padding="5">
+                        <Label  TextColor="White" Text="_______________________________________________________________" HorizontalOptions="Center" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Start" Padding="8">
+                                <Image Source="usuario.png"  HeightRequest="40"/>
+                                <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" Text="John Doe" TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="0"  Orientation="Horizontal" HorizontalOptions="End" >
+                                <Label  Text="Today, 12 AM" TextColor="White"  FontSize="17"  VerticalOptions="Center"/>
+                                <Image Source="estado.png" HeightRequest="40" BackgroundColor="Transparent"/>
+                            </StackLayout>
+                        </Grid>
+                        <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                            <RelativeLayout Padding="0,0,0,30">
+                                <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                            </RelativeLayout>
+
+                        </FlexLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,10,0,10" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+                                <Image Source="Captura"   HeightRequest="128" WidthRequest="128"/>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label Text="Honda es un fabricante japonés de motocicletas, automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, robots y componentes para la industria automotriz."
+                           FontSize="17"
+                           TextColor="Black"/>
+
+                        <Label  Padding="10" TextColor="White" Text="___________________________________________________________" HorizontalOptions="Center" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" >
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Image Source="corazon.png" HeightRequest="35"/>
+                                <Label Text="123"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Label Text=" "/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                                <Image Source="mensaje.png" HeightRequest="22"/>
+                                <Label Text="54"  FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+
+                            <Image Source="direcion.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </FlexLayout>
+        <Grid >            
+            
+            <StackLayout Orientation="Horizontal"  VerticalOptions="Center" HorizontalOptions="Center" >
+                <Frame Grid.Column="0" Grid.Row="0"  BackgroundColor="White" CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="1" Grid.Row="0" Padding="0"  BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="mas.png"  
+                                 BorderColor="White" BorderWidth="2.5"
+                                 BackgroundColor="Transparent"
+                                 Padding="0" HeightRequest="50" CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="2" Grid.Row="0"  BackgroundColor="White" CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="3" Grid.Row="0" Padding="0" BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="lupa.png"  BorderColor="White" 
+                                 BorderWidth="2.5"  Padding="0"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="50" CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="4" Grid.Row="0"  BackgroundColor="White" CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+
+                <Frame  Grid.Column="5" Grid.Row="0" Padding="0" BackgroundColor="Transparent" WidthRequest="50" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="7,7,7,7">
+                    <ImageButton Source="configuracion.png"  
+                                 BorderColor="White" 
+                                 BorderWidth="2.5"  Padding="0"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="50" CornerRadius="100"/>
+                </Frame>
+                <Frame Grid.Column="6" Grid.Row="0"  BackgroundColor="White" CornerRadius="100"  Padding="0.4" HorizontalOptions="Center" Margin="0,10,0,10"/>
+            
+            </StackLayout>
+        </Grid>
+    </FlexLayout>
+
+</ContentPage>

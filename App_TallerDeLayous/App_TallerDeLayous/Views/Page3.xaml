@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.Page3"
+             Title="MUSIC TRACKS"             
+             BackgroundImageSource="https://img.wallpaper.sc/iphone4s/images/iphone4s-740x1196-wallpaper_01292.jpg">
+   
+    <FlexLayout Direction="Column" >
+        <StackLayout  Orientation="Horizontal" Padding="10,20,10,0" >
+
+            <Frame BackgroundColor="#FF7043"  HeightRequest="25" Padding="0"  CornerRadius="50" HorizontalOptions="FillAndExpand">
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="lupa.png" HeightRequest="50"/>
+                    <Entry x:Name="txtUser" Placeholder="Buscar.."  PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent">
+                <ImageButton Source="corazonn.png"  BorderColor="White" 
+                             BorderWidth="2.5"  Padding="0"
+                             BackgroundColor="Transparent"
+                             WidthRequest="40" HeightRequest="40"  
+                             CornerRadius="100"/>
+            </Frame>
+            <Frame   Padding="0" CornerRadius="100" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center" >
+                <ImageButton Source="mas.png"  BorderColor="White" 
+                             BorderWidth="2.5"  Padding="0"
+                             BackgroundColor="Transparent"
+                             WidthRequest="40" HeightRequest="40" 
+                             CornerRadius="100"/>
+            </Frame>
+        </StackLayout>
+        
+        <FlexLayout FlexLayout.Grow="1" Margin="0,10,0,5">
+            <ScrollView >
+                <StackLayout  VerticalOptions="Center" HorizontalOptions="Center"  Padding="10,0,12,10">
+                    <StackLayout Margin="0,0,0,20">
+                        <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center" Text=" Playlists" TextColor="White"/>
+                        <StackLayout Orientation="Horizontal" >
+                            <StackLayout>
+                                <Image Source="https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg"  HeightRequest="130" WidthRequest="130"/>
+                                <Label  FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center"  Text="My Playlists" TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Image Source="https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg"  HeightRequest="130" WidthRequest="130"/>
+                                <Label  FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center" Text="Favorites" TextColor="White"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Image Source="https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg"  HeightRequest="130" WidthRequest="130"/>
+                                <Label  FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center" Text=" winter" TextColor="White"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Image Source="https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg"  HeightRequest="130" WidthRequest="130"/>
+                                <Label  FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center" Text=" Playlists" TextColor="#1A237E"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <FlexLayout Direction="Column" FlexLayout.Grow="1"  AlignItems="Center"   >
+
+                        <RelativeLayout Padding="0,0,0,10">
+                            <BoxView Color="#EEEEEE"
+                             RelativeLayout.XConstraint="0"
+                             RelativeLayout.YConstraint="-6"
+                             RelativeLayout.WidthConstraint="410"
+                             RelativeLayout.HeightConstraint="5" />
+
+                        </RelativeLayout>
+
+                    </FlexLayout>
+                    <Label FontAttributes="Bold" FontSize="25"   VerticalOptions="Center" HorizontalOptions="Center" Text=" Artists" TextColor="White" Margin="0,15,0,15"/>
+                    <StackLayout>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="3" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="4" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Grid.Column="0" Grid.Row="6" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="8" BackgroundColor="#EEEEEE">
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="musica.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="60" HeightRequest="60"  CornerRadius="100"/>
+                                </Frame>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="270">
+                                    <Label FontAttributes="Bold"  FontSize="20"  TextColor="#1A237E"  
+                                        Text=" John Doe"/>
+
+                                    <Label FontSize="20"  TextColor="#1A237E"  
+                                        Text=" 1 Album | 23 songs"/>
+                                </StackLayout>
+                                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" >
+                                    <ImageButton Source="reproducir.png" BackgroundColor="#1A237E" BorderColor="White" BorderWidth="2.5"  Padding="0" WidthRequest="40" HeightRequest="40"  CornerRadius="100"/>
+                                </Frame>
+
+                            </StackLayout>
+
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </FlexLayout>
+        
+    </FlexLayout>
+</ContentPage>

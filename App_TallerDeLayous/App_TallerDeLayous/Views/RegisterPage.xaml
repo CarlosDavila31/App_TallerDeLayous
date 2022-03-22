@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.RegisterPage"
+             BackgroundImageSource="https://i.pinimg.com/564x/1e/a4/81/1ea481c27d832787c83af675436fb834.jpg">
+    <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <StackLayout >
+            <Frame CornerRadius="100" HeightRequest="100" WidthRequest="100" Padding="0" HorizontalOptions="Center" Margin="7,7,0,7">
+                <Image Source="user.png" WidthRequest="100" HeightRequest="100"/>
+            </Frame>
+
+            <Label Text="Create Account"
+                       Margin="0,10,0,10"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       TextColor="Wheat" 
+                       FontSize="25"
+                       FontAttributes="Bold"/>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="User" HeightRequest="50" WidthRequest="50"/>
+                    <Entry Placeholder="Your User" PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Email" HeightRequest="50" WidthRequest="50"/>
+                    <Entry Placeholder="Your E-mail" PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="password" HeightRequest="35" WidthRequest="35"/>
+                    <Entry Placeholder="your Password" PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="10" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="password" HeightRequest="35" WidthRequest="35"/>
+                    <Entry Placeholder="Confirm pasword" PlaceholderColor="DarkGray" TextColor="White" HorizontalOptions="FillAndExpand" Margin="0,0,19,0"/>
+                </StackLayout>
+            </Frame>
+            <ImageButton  Source="flecha.png"
+                        x:Name="btnRegister"                        
+                        WidthRequest="70"
+                        CornerRadius="100"      
+                        Clicked="btnRegister_Clicked"
+                        HorizontalOptions="Center" 
+                        BackgroundColor="#FF5722"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

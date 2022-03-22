@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_TallerDeLayous.Views.Page4"
+             Title="MUSIC PLAYER"
+             BackgroundImageSource="https://img.wallpaper.sc/iphone4s/images/iphone4s-740x1196-wallpaper_01292.jpg">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="John Doe | First Album" 
+                   HorizontalOptions="Center"  
+                   TextColor="White"
+                   Padding="10,30,10,0"
+                   FontAttributes="Bold"  
+                   FontSize="20" />
+            
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center" Padding="20,20,20,15" >
+
+                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                    <ImageButton Source="play.png"  
+                                 WidthRequest="50"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="50"  
+                                 CornerRadius="100"/>
+                </Frame>
+
+                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                    <ImageButton Source="playB.png"  
+                                 WidthRequest="60" 
+                                 HeightRequest="60" 
+                                 BackgroundColor="Transparent"
+                                 CornerRadius="100"/>
+                </Frame>
+
+                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center"  BackgroundColor="#EEEEEE">
+                    <ImageButton Source="play.png"   
+                                 WidthRequest="80" 
+                                 HeightRequest="80"  
+                                 BackgroundColor="Transparent"
+                                 CornerRadius="100"/>
+                </Frame>
+
+                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                    <ImageButton Source="playA.png" 
+                                 WidthRequest="60" 
+                                 HeightRequest="60"  
+                                 BackgroundColor="Transparent"
+                                 CornerRadius="100"/>
+                </Frame>
+
+                <Frame   Padding="0"  CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                    <ImageButton Source="playAa.png"  
+                                 WidthRequest="50" 
+                                 HeightRequest="50"
+                                 BackgroundColor="Transparent"
+                                 CornerRadius="100"/>
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center" >
+
+                <Frame   Padding="0"  CornerRadius="100"  BackgroundColor="Transparent" >
+                    
+                    <ImageButton Source="play2.png"                                  
+                                 BorderColor="Black" BorderWidth="1.5"
+                                 Padding="0" WidthRequest="40" 
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="40"  
+                                 CornerRadius="100"/>
+                </Frame>
+               
+                <Frame   Padding="0"  CornerRadius="100"  BackgroundColor="Transparent"  >
+                    <ImageButton Source="play1.png"                                   
+                                 Padding="0" WidthRequest="40" 
+                                 HeightRequest="40"
+                                 BackgroundColor="Transparent"
+                                 BorderColor="Black" BorderWidth="1.5"
+                                 CornerRadius="100"/>
+                </Frame>
+               
+                <Frame   Padding="0"  CornerRadius="100"   BackgroundColor="Transparent"  >
+                    <ImageButton Source="play3.png"                                  
+                                 BorderColor="Black" BorderWidth="1.5"
+                                 Padding="0" WidthRequest="40" 
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="40"  
+                                 CornerRadius="100"/>
+                </Frame>                
+
+            </StackLayout>
+           
+            <StackLayout Padding="20,30,20,30">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Slider  MinimumTrackColor="#1A237E"  ThumbColor="#EF6C00" MaximumTrackColor="#1A237E" Grid.Column="0"  />
+
+                </Grid>
+
+            </StackLayout >
+            
+            <ScrollView>                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0" Grid.Row="0" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                            <Label  FontSize="20" VerticalOptions="Center" Text="1" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+                            <Label  Text="03.16" TextColor="Gray"  FontSize="17"   VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png"  HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="1" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                            <Label  FontSize="20" VerticalOptions="Center" Text="2" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="2" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                            <Label  FontSize="20" VerticalOptions="Center" Text="3" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="3" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5" >
+                            <Label  FontSize="20" VerticalOptions="Center" Text="4" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="4" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5" >
+                            <Label  FontSize="20" VerticalOptions="Center" Text="5" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="5" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5" >
+                            <Label  FontSize="20" VerticalOptions="Center" Text="6" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="6" 
+                             Orientation="Horizontal"
+                             WidthRequest="350"
+                             VerticalOptions="Center" HorizontalOptions="Center" 
+                             Padding="8" BackgroundColor="#EEEEEE">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5" >
+                            <Label  FontSize="20" VerticalOptions="Center" Text="7" TextColor="Gray"/>
+                            <Label  FontSize="20" VerticalOptions="Center" WidthRequest="225" Text="Music Track" TextColor="#1A237E"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label  Text="03.16" TextColor="Black"  FontSize="17"  VerticalOptions="Center"/>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" HeightRequest="35"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
